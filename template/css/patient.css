@@ -1,0 +1,215 @@
+/* Styles généraux */
+#schedule_calendar {
+    width: 100%; /* Pleine largeur */
+    margin: 0 auto; /* Centrer le calendrier si nécessaire */
+}
+
+/* Boutons de navigation */
+.span2.action-nav-button,
+.new-class {
+    padding: 2px 2px 13px 2px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.span2.action-nav-button a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: -3px;
+}
+
+.span2.action-nav-button i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Couleurs de fond des boutons */
+.span2.action-nav-button:nth-child(1) .new-class { background-color: green; }
+.span2.action-nav-button:nth-child(2) .new-class { background-color: red; }
+.span2.action-nav-button:nth-child(3) .new-class { background-color: rgb(0, 132, 255); }
+.span2.action-nav-button:nth-child(4) .new-class { background-color: orange; }
+.span2.action-nav-button:nth-child(5) .new-class { background-color: rgb(119, 24, 119); }
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    background-color: #4fa3d1; /* Bleu clair */
+    color: #fff;
+    height: 200vh;
+    position: relative;
+    bottom: 200px;
+    top: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    top: 0;
+    left: 0;
+}
+
+/* Liste des éléments de la sidebar */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Chaque élément de la sidebar */
+.sidebar ul li {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+}
+
+/* Liens dans la sidebar */
+.sidebar ul li a {
+    color: #fff;
+    align-items: center;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Icônes dans les éléments de la sidebar */
+.sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 18px; /* Taille de l'icône */
+}
+
+/* Effet de survol des éléments de la sidebar */
+.sidebar ul li a:hover {
+    background-color: #0077b6; /* Bleu moyen */
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 100px;
+}
+.sidebar img {
+    width: 40%;
+    border-radius: 50%;
+    margin: -60px 0 -15px;
+}
+
+/* Sous-menus */
+#view_hospital_submenu, #settings_submenu {
+    background-color: #4fa3d1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#view_hospital_submenu li, #settings_submenu li {
+    padding: 5px 10px;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease-in-out;
+}
+
+#view_hospital_submenu li:hover, #settings_submenu li:hover {
+    transform: translateX(5px);
+    background-color: #5fa7d5;
+}
+
+#view_hospital_submenu li a, #settings_submenu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#view_hospital_submenu li a:hover, #settings_submenu li a:hover {
+    background-color: #0077b6;
+    padding-left: 15px;
+    transform: scale(1.05);
+}
+
+#view_hospital_submenu li a i, #settings_submenu li a i {
+    margin-right: 10px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Tableaux */
+table {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: #333;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+thead th {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #4fa3d1;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+tbody td {
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Boutons */
+.btn-primary, .btn-danger {
+    padding: 8px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #4fa3d1;
+}
+
+.btn-primary:hover {
+    background-color: #0077b6;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
+/* Infobulles */
+[rel="tooltip"] {
+    position: relative;
+    cursor: pointer;
+}
+
+[rel="tooltip"]:hover::after {
+    content: attr(data-original-title);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Groupe de boutons */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

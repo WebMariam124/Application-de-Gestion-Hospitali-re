@@ -1,0 +1,149 @@
+
+.sidebar {
+    width: 210px;
+    background-color: #4fa3d1; /* Bleu clair */
+    color: #fff;
+    height: 200vh;
+    position: relative;
+    bottom: 200px;
+    top: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    top: 0;
+    left: 0;
+}
+
+/* Liste des éléments de la sidebar */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Chaque élément de la sidebar */
+.sidebar ul li {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+}
+
+/* Liens dans la sidebar */
+.sidebar ul li a {
+    color: #fff;
+    align-items: center;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Icônes dans les éléments de la sidebar */
+.sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 18px; /* Taille de l'icône */
+}
+
+/* Effet de survol des éléments de la sidebar */
+.sidebar ul li a:hover {
+    background-color: #0077b6; /* Bleu moyen */
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 100px;
+}
+
+/* Logo dans la sidebar */
+.sidebar img {
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: -15px; /* Réduisez la marge en bas de l'image */
+    margin-top: -60px; /* Ajoutez une marge en haut de l'image */
+}
+
+/* Style pour le menu "view_hospital_submenu" */
+#view_hospital_submenu {
+    background-color: #4fa3d1; /* Même couleur de fond que la sidebar */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#view_hospital_submenu li {
+    padding: 5px 10px; /* Ajustez le padding pour réduire la taille des éléments */
+    text-align: left; /* Alignez le texte à gauche */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+#view_hospital_submenu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-size: 12px; /* Réduisez la taille de la police */
+    padding: 5px; /* Ajoutez un peu de padding */
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#view_hospital_submenu li a i {
+    margin-right: 10px;
+    font-size: 16px; /* Réduisez la taille de l'icône */
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol sur le lien */
+#view_hospital_submenu li a:hover {
+    background-color: #0077b6; /* Couleur de fond au survol */
+    border-radius: 5px;
+    padding-left: 15px;
+    height: 20px;
+    transform: scale(1.05); /* Zoom léger lors du survol */
+}
+
+/* Style pour la liste "settings_submenu" */
+#settings_submenu {
+    background-color: #4fa3d1; /* Couleur de fond */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour chaque élément de la liste */
+#settings_submenu li {
+    padding: 5px 10px; /* Espacement interne */
+    text-align: left; 
+    transition: transform 0.3s ease, background-color 0.3s ease-in-out;
+}
+
+/* Style pour les liens dans la liste */
+#settings_submenu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-size: 12px; /* Taille de la police */
+    padding: 5px; /* Espacement interne */
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Style pour les icônes dans les liens */
+#settings_submenu li a i {
+    margin-right: 10px;
+    font-size: 16px; /* Taille de l'icône */
+    transition: transform 0.3s ease;
+}
+
+/* Effet de survol sur les liens */
+#settings_submenu li a:hover {
+    background-color: #0077b6; /* Couleur de fond au survol */
+    border-radius: 5px;
+    padding-left: 15px;
+    height: 20px;
+    transform: scale(1.05); /* Zoom léger lors du survol */
+}
+
+/* Ajouter un effet au survol des éléments de la liste */
+#settings_submenu li:hover {
+    transform: translateX(5px); /* Déplacement léger à droite lors du survol */
+    background-color: #5fa7d5;
+}
